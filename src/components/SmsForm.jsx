@@ -7,13 +7,13 @@ const SmsForm = () => {
     return(
         <div className='container'>
             <h3>Send SMS Message!</h3>
-            <formdd>
+            <form>
                 <label>Mobile Number:</label>
                 <input name='number'></input>
                 <label>Message:</label>
                 <textarea name='sms'></textarea>
                 <button>Submit</button>
-            </formdd>
+            </form>
         </div>
     )
 }
