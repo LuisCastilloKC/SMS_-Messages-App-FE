@@ -4,7 +4,7 @@ const SmsForm = () => {
     const [ sms, setSms] = useState('')
     const [number, setNumber]= useState('')
 
-    const sendSMs = (e) => {
+    const sendSms = (e) => {
        e.preventDefault();
 
        let smsData = {
@@ -26,7 +26,7 @@ const SmsForm = () => {
     return(
         <div className='container'>
             <h3>Send SMS Message!</h3>
-            <form>
+            <form onSubmit={sendSms}>
                 <label>Mobile Number:</label>
                 <input name='number'></input>
                 <label>Message:</label>
