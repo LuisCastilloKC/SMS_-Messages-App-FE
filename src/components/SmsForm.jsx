@@ -23,8 +23,12 @@ const SmsForm = () => {
         .then(data => console.log(data))
     }
 
-    const handleChange = () => {
-        
+    const handleChange = (e) => {
+        if(e.target.name == 'number'){
+            setNumber(e.target.value)
+        }else if(e.target.name === 'sms'){
+            setSms(e.target.value)
+        }
     }
 
     return(
