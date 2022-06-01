@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { Container, Header, Form, Input, TextArea, Button } from './SmsStyle'
 
 const SmsForm = () => {
     const [ sms, setSms] = useState('')
@@ -32,16 +33,16 @@ const SmsForm = () => {
     }
 
     return(
-        <div className='container'>
-            <h3>Send SMS Message!</h3>
-            <form onSubmit={sendSms}>
-                <label>Mobile Number:</label>
-                <input name='number' onChange={handleChange}></input>
-                <label>Message:</label>
-                <textarea name='sms' onChange={handleChange}></textarea>
-                <button>Submit</button>
-            </form>
-        </div>
+        <Container>
+            <Header>Send SMS Message!</Header>
+            <Form onSubmit={sendSms}>
+                
+                <Input name='number' onChange={handleChange} placeholder="Mobile Number"></Input>
+               
+                <TextArea name='sms' onChange={handleChange}></TextArea>
+                <Button>Submit</Button>
+            </Form>
+        </Container>
     )
 }
 
