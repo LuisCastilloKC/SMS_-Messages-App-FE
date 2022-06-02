@@ -54,15 +54,23 @@ min-height: 25px;
 `
 
 export const Button = styled.button`
-  width: 180px;
-  padding: 12px 25px;
-  margin: 6px 0 4px;
-  font-size: 12px;
-  text-transform: uppercase;
-  color: white;
-  background-color: black;
-  letter-spacing: 1px;
+padding: 50px 10px;
+
+	width: 70px;
+	float: right;
+	border: none;
+	border: solid 1px rgba(255,255,255,0.8);
+	background: rgba(255,255,255,0.8);
+	box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+	font-size: 12pt;
+	text-align: center;
+	border-radius: 0 25px 25px 0;
+	cursor: pointer;
+	color: #002E40;
   &:hover {
     cursor: pointer;
+    border-color: #ffffff;
+	background: #ffffff;
+	color: #002E40;
   }
 `
